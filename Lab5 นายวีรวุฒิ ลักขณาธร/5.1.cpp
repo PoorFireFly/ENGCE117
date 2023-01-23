@@ -6,7 +6,7 @@ struct studentNode {
     int age;
     char sex;
     float gpa;
-    struct studentNode *next; //what is mean
+    struct studentNode *next; 
 };
 
 struct studentNode *AddNode( struct studentNode **walk, char n[], int a, char s, float g );
