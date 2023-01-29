@@ -25,7 +25,7 @@ int main(){
     ShowAll(start);
     start = ShowBack(start); 
     back = start; 
-    ShowAll(start);
+    ShowAll(back);
     SwapNode(&start, 99, 44);
     ShowAll(start);
     return 0;
