@@ -63,14 +63,12 @@ void AddData( LinkedList *ll ) {
     printf("Error opening file.\n");
     return;
   }
-
   ll->GoFirst();
   while ( ll->NowNode() != NULL ) {
     studentNode *node = ll->NowNode();
     fprintf( file, "%s %d %c %f\n", node->name, node->age, node->sex, node->gpa );
     ll->GoNext();
   }
-
   fclose( file );
   printf( "File added successfully.\n" );
 }
@@ -81,14 +79,12 @@ void EditFile( LinkedList *ll, char filename[] ) {
     printf( "Error opening file.\n" );
     return;
   }
-
   ll->GoFirst();
   while ( ll->NowNode() != NULL ) {
     studentNode *node = ll->NowNode();
     fprintf( file, "%s %d %c %f\n", node->name, node->age, node->sex, node->gpa );
     ll->GoNext();
   }
-
   fclose( file );
   printf( "File edited successfully.\n" );
 }
